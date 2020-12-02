@@ -29,7 +29,8 @@ export const InnerContainer = styled.header`
 export const LogoContainer = styled.div`
   display: flex;
   flex: 1;
-  width: 170px;
+  width: 100%;
+  padding: 0 10px;
   height: 50px;
   justify-content: center;
   align-items: center;
@@ -41,7 +42,7 @@ export const LogoContainer = styled.div`
 `;
 
 export const Logo = styled.img`
-  width: 150px;
+  /* width: 150px; */
 `;
 
 export const SearchInput = styled.input`
