@@ -15,6 +15,17 @@ export const Container = styled.div`
   border-top: 3px solid var(--primary);
   box-shadow: 0px 2px rgba(0, 0, 0, 0.1);
   padding: 0 30px;
+
+  .mobile {
+    display: none;
+  }
+
+  @media only screen and (max-width: 820px) {
+    .mobile {
+      cursor: pointer;
+      display: inherit;
+    }
+  }
 `;
 
 export const InnerContainer = styled.header`
@@ -53,6 +64,14 @@ export const SearchInput = styled.input`
   font-size: 13px;
   line-height: 1.15;
   border-radius: 4px;
+
+  @media only screen and (max-width: 820px) {
+    visibility: hidden;
+
+    .mobile {
+      visibility: visible;
+    }
+  }
 `;
 
 export const ReputationContainer = styled.div`
@@ -81,6 +100,10 @@ export const Reputation = styled.span`
   font-size: 13px;
   margin-left: 7px;
   color: #535a60;
+
+  @media only screen and (max-width: 980px) {
+    display: none;
+  }
 `;
 
 interface ReputationColorProps {
@@ -97,6 +120,10 @@ export const ReputationDot = styled.div<ReputationColorProps>`
       : props.color === "gold"
       ? "var(--gold)"
       : "var(--silver)"};
+
+  @media only screen and (max-width: 980px) {
+    display: none;
+  }
 `;
 
 export const ReputationPoints = styled.span<ReputationColorProps>`
@@ -113,6 +140,10 @@ export const ReputationPoints = styled.span<ReputationColorProps>`
       : props.color === "gold"
       ? "var(--gold)"
       : "var(--silver)"};
+
+  @media only screen and (max-width: 980px) {
+    display: none;
+  }
 `;
 
 export const Icons = styled.div`
@@ -122,18 +153,18 @@ export const Icons = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: row;
+`;
 
-  div {
-    height: 50px;
-    width: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    cursor: pointer;
+export const IconContainer = styled.div`
+  height: 50px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  cursor: pointer;
 
-    :hover {
-      background: var(--hover-gray);
-    }
+  :hover {
+    background: var(--hover-gray);
   }
 `;

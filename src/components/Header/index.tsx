@@ -12,10 +12,11 @@ import {
   ReputationPoints,
   ReputationDot,
   Icons,
+  IconContainer,
 } from "./styles";
 
 import logoBr from "../../assets/logo-br.png";
-import { FaInbox, FaStackExchange } from "react-icons/fa";
+import { FaInbox, FaStackExchange, FaSearch } from "react-icons/fa";
 import { AiFillTrophy } from "react-icons/ai";
 import { BsFillQuestionCircleFill } from "react-icons/bs";
 
@@ -27,6 +28,9 @@ const Header: React.FC = () => {
           <Logo src={logoBr} alt="logo" />
         </LogoContainer>
         <SearchInput type="text" name="search" placeholder="Pesquisar..." />
+        <IconContainer title="Pesquisar" className="mobile">
+          <FaSearch size={20} />
+        </IconContainer>
         <ReputationContainer title="Sua reputação: 463">
           <Avatar
             src="https://www.gravatar.com/avatar/909cbdb7d8ff6de5cc0227a5424e2fa2"
@@ -47,18 +51,18 @@ const Header: React.FC = () => {
           </ReputationPoints>
         </ReputationContainer>
         <Icons>
-          <div title="Últimas mensagens no Inbox">
+          <IconContainer title="Últimas mensagens no Inbox">
             <FaInbox size={22} />
-          </div>
-          <div title="Conquistas recentes: reputação, medalhas e privilégios obtidos">
+          </IconContainer>
+          <IconContainer title="Conquistas recentes: reputação, medalhas e privilégios obtidos">
             <AiFillTrophy size={22} />
-          </div>
-          <div title="Central de ajuda e outros recursos">
+          </IconContainer>
+          <IconContainer title="Central de ajuda e outros recursos">
             <BsFillQuestionCircleFill size={20} />
-          </div>
-          <div title="Todos os 176 sites do Stack Exchange">
+          </IconContainer>
+          <IconContainer title="Todos os 176 sites do Stack Exchange">
             <FaStackExchange size={20} />
-          </div>
+          </IconContainer>
         </Icons>
       </InnerContainer>
     </Container>
