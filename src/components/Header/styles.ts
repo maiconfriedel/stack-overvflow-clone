@@ -36,7 +36,7 @@ export const LogoContainer = styled.div`
   cursor: pointer;
 
   :hover {
-    background: rgba(214, 214, 214, 0.6);
+    background: var(--hover-gray);
   }
 `;
 
@@ -65,7 +65,7 @@ export const ReputationContainer = styled.div`
   padding: 0 10px;
 
   :hover {
-    background: rgba(214, 214, 214, 0.6);
+    background: var(--hover-gray);
   }
 `;
 
@@ -92,10 +92,10 @@ export const ReputationDot = styled.div<ReputationColorProps>`
   border-radius: 50%;
   background: ${(props) =>
     props.color === "copper"
-      ? "#ab825f"
+      ? "var(--copper)"
       : props.color === "gold"
-      ? "#FFCC00"
-      : "#C5C5C5"};
+      ? "var(--gold)"
+      : "var(--silver)"};
 `;
 
 export const ReputationPoints = styled.span<ReputationColorProps>`
@@ -108,10 +108,10 @@ export const ReputationPoints = styled.span<ReputationColorProps>`
   flex-direction: row;
   color: ${(props) =>
     props.color === "copper"
-      ? "#ab825f"
+      ? "var(--copper)"
       : props.color === "gold"
-      ? "#FFCC00"
-      : "#C5C5C5"};
+      ? "var(--gold)"
+      : "var(--silver)"};
 `;
 
 export const Icons = styled.div`
@@ -132,7 +132,7 @@ export const Icons = styled.div`
     cursor: pointer;
 
     :hover {
-      background: rgba(214, 214, 214, 0.6);
+      background: var(--hover-gray);
     }
   }
 `;

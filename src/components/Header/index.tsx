@@ -27,23 +27,23 @@ const Header: React.FC = () => {
           <Logo src={logoBr} alt="logo" />
         </LogoContainer>
         <SearchInput type="text" name="search" placeholder="Pesquisar..." />
-        <ReputationContainer>
+        <ReputationContainer title="Sua reputação: 463">
           <Avatar
             src="https://www.gravatar.com/avatar/909cbdb7d8ff6de5cc0227a5424e2fa2"
             alt="profile"
           />
-          <Reputation>463</Reputation>
+          <Reputation>9874547</Reputation>
           <ReputationPoints color="gold">
             <ReputationDot color="gold" />
-            &nbsp;1
+            &nbsp;97
           </ReputationPoints>
           <ReputationPoints color="silver">
             <ReputationDot color="silver" />
-            &nbsp;3
+            &nbsp;123
           </ReputationPoints>
           <ReputationPoints color="copper">
             <ReputationDot color="copper" />
-            &nbsp;14
+            &nbsp;239
           </ReputationPoints>
         </ReputationContainer>
         <Icons>
