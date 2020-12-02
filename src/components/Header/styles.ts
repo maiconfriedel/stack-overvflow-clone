@@ -12,7 +12,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   z-index: 5050;
-  border-top: 3px solid #f48024;
+  border-top: 3px solid var(--primary);
   box-shadow: 0px 2px rgba(0, 0, 0, 0.1);
   padding: 0 30px;
 `;
